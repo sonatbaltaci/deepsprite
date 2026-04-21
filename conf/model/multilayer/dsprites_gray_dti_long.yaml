@@ -1,0 +1,28 @@
+name: multilayer
+n_sprites: 3
+n_backgrounds: 1
+n_objects: 5
+prototype:
+  source: data
+  data:
+    freeze: [0, 0, 20]
+    init: ["constant", "constant", "gaussian"]
+    value: [0.9, 0.5, 0.]
+    gaussian_weights_std: 7
+softmax: softmax
+init_latent_linear: gaussian
+with_pool: [4, 4]
+transformation_sequence: identity_similarity
+transformation_sequence_bkg: color
+transformation_sequence_layer: color_position
+curriculum_learning: [40]
+curriculum_learning_bkg: False
+curriculum_learning_layer: False
+sprite_size: [28, 28]
+pred_occlusion: True
+add_empty_sprite: True
+lambda_empty_sprite: 1.0e-4
+reassign_cluster: True
+proba: False
+estimate_minimum: True
+greedy_algo_iter: 3

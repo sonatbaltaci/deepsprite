@@ -1,0 +1,12 @@
+name: clustering
+n_prototypes: 10
+prototype:
+  source: data
+  data:
+    init: sample
+encoder_name: resnet20 
+transformation_sequence: identity_color_affine_tps
+curriculum_learning: [5, 15, 30]
+grid_size: 4
+reassign_cluster: True
+proba: False

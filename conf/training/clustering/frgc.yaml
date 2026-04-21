@@ -1,0 +1,12 @@
+
+batch_size: 128
+n_workers: 4
+optimizer:
+  lr: 1.0e-3
+scheduler:
+  gamma: 0.1
+  milestones: [1300]
+n_epoches: 1400
+train_stat_interval: 10
+val_stat_interval: 20
+check_cluster_interval: 20

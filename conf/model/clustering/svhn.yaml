@@ -1,0 +1,18 @@
+name: clustering
+n_prototypes: 10
+prototype:
+  source: generator
+  generator: mlp
+gaussian_weights_std:  7
+gaussian_weights: True
+encoder_name: resnet20 
+transformation_sequence: identity_color_projective
+curriculum_learning: [16, 144]
+reassign_cluster: False
+proba: True
+proba_weighting: tr_sprite
+proba_type: linear
+estimate_minimum: False
+empty_cluster_threshold: 0.05
+freq_weight: 0.01
+bin_weight: 0.001

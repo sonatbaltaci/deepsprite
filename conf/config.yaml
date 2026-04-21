@@ -1,0 +1,27 @@
+defaults:
+  # - override hydra/launcher: jz
+  - _self_
+
+model:
+  inject_noise: 0.4
+  encoder_name: resnet32
+  freq_weight: 0.0
+  bin_weight: 0.0
+  estimate_minimum: True
+  softmax: gumbel_softmax
+  tau: 1.
+training:
+  optimizer_name: adam
+  optimizer:
+    lr: 1.0e-4
+  transformer_optimizer:
+    weight_decay: 1.0e-6
+  scheduler_name: multi_step
+  seed: 4321
+  eval_with_bkg: True
+  eval_semantic: True
+  save: True
+  cont: False
+  resume: null 
+hydra:
+  verbose: false

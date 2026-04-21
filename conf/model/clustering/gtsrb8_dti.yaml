@@ -1,0 +1,13 @@
+name: clustering
+n_prototypes: 8
+prototype:
+  source: data
+  data:
+    init: sample
+gaussian_weights_std:  7
+gaussian_weights: True
+encoder_name: resnet20 
+transformation_sequence: identity_color_projective
+curriculum_learning: [20, 180]
+reassign_cluster: True
+proba: False

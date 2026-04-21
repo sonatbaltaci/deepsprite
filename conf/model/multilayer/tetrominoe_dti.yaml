@@ -1,0 +1,25 @@
+name: multilayer
+n_sprites: 19
+n_backgrounds: 0
+n_objects: 3
+color_channels: 3
+prototype:
+  source: data
+  data:
+    freeze: [0, 0, 1]
+    init: ["constant", "constant", "gaussian"]
+    value: [0.9, 0., 0.]
+    gaussian_weights_std: 5
+softmax: softmax
+transformation_sequence: identity
+transformation_sequence_layer: color_position 
+curriculum_learning: False
+curriculum_learning_bkg: False
+curriculum_learning_layer: False
+init_latent_linear: gaussian
+sprite_size: [24, 24]
+pred_occlusion: False
+reassign_cluster: True 
+proba: False
+estimate_minimum: True
+greedy_algo_iter: 1

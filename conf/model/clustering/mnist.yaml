@@ -1,0 +1,19 @@
+name: clustering
+n_prototypes: 10
+prototype:
+  source: generator
+  generator: mlp
+encoder_name: resnet20 
+color_channels: 1
+transformation_sequence: identity_affine_morpho_tps
+curriculum_learning: [10, 30, 40]
+grid_size: 4
+kernel_size: 7
+reassign_cluster: False
+proba: True
+proba_weighting: tr_sprite
+proba_type: linear
+estimate_minimum: False
+freq_weight: 0.01
+bin_weight: 0
+empty_cluster_threshold: 0.05

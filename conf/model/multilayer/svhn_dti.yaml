@@ -1,0 +1,22 @@
+name: multilayer
+n_sprites: 10
+n_backgrounds: 1
+inject_noise: 0.4
+prototype:
+  source: data 
+  data:
+    freeze: [False, False, False]
+    value: [0.9, 0., 0.]
+    init: ["constant", "mean", "gaussian"]
+    gaussian_weights_std: 8 
+softmax: softmax
+encoder_name: resnet32 
+transformation_sequence: color_projective_tps
+transformation_sequence_bkg: color_projective_tps
+curriculum_learning: [10, 35]
+curriculum_learning_bkg: [10, 35]
+curriculum_learning_layer: False
+reassign_cluster: True
+proba: False
+estimate_minimum: True
+empty_cluster_threshold: 0.05
