@@ -65,7 +65,7 @@ python -m src.multilayer_trainer +dataset=clevr +model=multilayer/clevr +trainin
 
 ### Additional information for `config` file configurations
 - Since our repository is built upon `hydra`, any hyperparameter for both the model and the training pipeline can be overwritten with `++<hyperparameter_name>` through the command line.
-- Under `conf/`, if a model or training setup configuration filename ends with `_dti`, the setup corresponds to the baselines (Monnier et al., 2020) and (Monnier et al. 2021). Additionally, `_long` suffix to `_dti` corresponds to longer training of the baseline to have a fair comparison with our model.
+- Under `conf/`, if a model or training setup configuration file name ends with `_dti`, the setup corresponds to the baselines (Monnier et al., 2020) and (Monnier et al., 2021). Additionally, `_long` suffix to `_dti` corresponds to longer training of the baseline to have a fair comparison with our model.
 
 ## Citation :bookmark:
 ```
