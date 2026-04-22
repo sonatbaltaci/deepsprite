@@ -7,6 +7,8 @@ Official repository of the paper <i>"Deep Sprite-based Image Models: An Analysis
 <img src="media/dti-teaser-v2.png" height="250pt">
 </div>
 
+[![arXiv](https://img.shields.io/badge/arXiv-2604.19480-b31b1b.svg)](https://arxiv.org/abs/2604.19480)
+
 ## Setup :construction:
 ### Environment
 This project uses `uv`. To setup the environment:
