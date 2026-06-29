@@ -71,14 +71,12 @@ python -m src.multilayer_trainer +dataset=clevr +model=multilayer/clevr +trainin
 
 ## Citation :bookmark:
 ```
-@misc{baltacı2026deepsprite,
-      title={Deep sprite-based image models: An analysis}, 
-      author={Zeynep Sonat Baltacı and Romain Loiseau and Mathieu Aubry},
-      year={2026},
-      eprint={2604.19480},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2604.19480}, 
+
+@article{baltaci2026deep,
+  title   = {Deep sprite-based image models: An analysis},
+  author  = {Baltac{\i}, Zeynep Sonat and Loiseau, Romain and Aubry, Mathieu},
+  journal = {Transactions on Machine Learning Research},
+  year    = {2026}
 }
 ```
 
